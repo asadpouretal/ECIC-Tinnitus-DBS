@@ -10,7 +10,7 @@ This repository contains MATLAB scripts and data analysis tools used in the stud
 - **`plot_average_firing_rate_group`**: Plots the average firing rate for control and tinnitus groups (generates Figure 4A).
 - **`compare_isi_histograms_group`**: Compares and plots ISI histograms for control and tinnitus groups before and after stimulation (generates Figures 4B and 4C).
 
-### 2. Data
+### 2. Sample Data
 - Firing rate data for control and tinnitus groups, organized into folders for conditions (`Before stimulation` and `After stimulation`).
 - ISI data, derived from spike trains.
 
