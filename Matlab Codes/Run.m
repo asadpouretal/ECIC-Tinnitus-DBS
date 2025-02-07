@@ -45,6 +45,7 @@ params.T_min = str2double(answer{8});
 params.N_min = str2double(answer{9});
 params.MAD_multiplier = str2double(answer{10});
 params.down_sampled_FR_frequency = 5000; % down-sampled frequency for firing rate (Hz)
+params.downsample_factor = 50;  % Reduce by a factor of 50 (from 5000 Hz to 100 Hz)
 params.down_sampled_BR_frequency = 1000; % down-sampled frequency for burst rate (Hz)
 params.min_ISI = 1;   % Minimum Inter-spike interval (ms)
 params.pre_peak_time = 0.001; % 1 ms before the peak for spike sorting
@@ -59,8 +60,8 @@ end
 
 
 % 
-parent_folder = 'your_path';
-plot_average_firing_rate_group(parent_folder);
+parent_folder = 'C:\Users\aaa210\OneDrive - University of Sussex\Research projects\Bimarestan Rasoul\Akbarnejad Single\New Device\Analysed data';
+plot_average_firing_rate_group(parent_folder, params);
 % plot_average_burst_rate(parent_folder);
 compare_isi_histograms_group(parent_folder);
 compare_isi_pdf(parent_folder);
