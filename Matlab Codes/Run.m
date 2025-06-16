@@ -60,7 +60,7 @@ end
 
 
 % 
-parent_folder = 'C:\Users\aaa210\OneDrive - University of Sussex\Research projects\Bimarestan Rasoul\Akbarnejad Single\New Device\Analysed data';
+parent_folder = 'your_path';
 plot_average_firing_rate_group(parent_folder, params);
 % plot_average_burst_rate(parent_folder);
 compare_isi_histograms_group(parent_folder);
