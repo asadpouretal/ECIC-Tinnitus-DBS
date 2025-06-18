@@ -195,27 +195,27 @@ function plot_average_firing_rate_group(parent_folder, params)
     shadedErrorBar(time_vector_after, mean_tinnitus_after, ci_tinnitus_after, {'-r', 'LineWidth', 2}, {});
 
     % Kruskal-Wallis test and Rank-Biserial Correlation effect size
-    % effect_size_thresholds = [0.2, 0.5, 0.8]; % Thresholds for small, medium, large effect sizes
-    % for t = 1:size(tinnitus_firing_before_downsampled, 2)
-    %     [p, ~] = kruskalwallis([tinnitus_firing_before_downsampled(:, t); control_firing_before_downsampled(:, t)], ...
-    %         [ones(size(tinnitus_firing_before_downsampled, 1), 1); 2 * ones(size(control_firing_before_downsampled, 1), 1)], ...
-    %         'off');
-    %     if p < 0.05
-    %         effect_size = rank_biserial_correlation(tinnitus_firing_before_downsampled(:, t), control_firing_before_downsampled(:, t));
-    %         color = assign_color(effect_size, effect_size_thresholds);
-    %         scatter(time_vector_before(t), min(ylim) + 0.1 * abs(min(ylim)), 50, 'MarkerFaceColor', color, 'MarkerEdgeColor', 'none');
-    %     end
-    % end
-    % for t = 1:size(tinnitus_firing_after_downsampled, 2)
-    %     [p, ~] = kruskalwallis([tinnitus_firing_after_downsampled(:, t); control_firing_after_downsampled(:, t)], ...
-    %         [ones(size(tinnitus_firing_after_downsampled, 1), 1); 2 * ones(size(control_firing_after_downsampled, 1), 1)], ...
-    %         'off');
-    %     if p < 0.05
-    %         effect_size = rank_biserial_correlation(tinnitus_firing_after_downsampled(:, t), control_firing_after_downsampled(:, t));
-    %         color = assign_color(effect_size, effect_size_thresholds);
-    %         scatter(time_vector_after(t), min(ylim) + 0.1 * abs(min(ylim)), 50, 'MarkerFaceColor', color, 'MarkerEdgeColor', 'none');
-    %     end
-    % end
+    effect_size_thresholds = [0.2, 0.5, 0.8]; % Thresholds for small, medium, large effect sizes
+    for t = 1:size(tinnitus_firing_before_downsampled, 2)
+        [p, ~] = kruskalwallis([tinnitus_firing_before_downsampled(:, t); control_firing_before_downsampled(:, t)], ...
+            [ones(size(tinnitus_firing_before_downsampled, 1), 1); 2 * ones(size(control_firing_before_downsampled, 1), 1)], ...
+            'off');
+        if p < 0.05
+            effect_size = rank_biserial_correlation(tinnitus_firing_before_downsampled(:, t), control_firing_before_downsampled(:, t));
+            color = assign_color(effect_size, effect_size_thresholds);
+            scatter(time_vector_before(t), min(ylim) + 0.1 * abs(min(ylim)), 50, 'MarkerFaceColor', color, 'MarkerEdgeColor', 'none');
+        end
+    end
+    for t = 1:size(tinnitus_firing_after_downsampled, 2)
+        [p, ~] = kruskalwallis([tinnitus_firing_after_downsampled(:, t); control_firing_after_downsampled(:, t)], ...
+            [ones(size(tinnitus_firing_after_downsampled, 1), 1); 2 * ones(size(control_firing_after_downsampled, 1), 1)], ...
+            'off');
+        if p < 0.05
+            effect_size = rank_biserial_correlation(tinnitus_firing_after_downsampled(:, t), control_firing_after_downsampled(:, t));
+            color = assign_color(effect_size, effect_size_thresholds);
+            scatter(time_vector_after(t), min(ylim) + 0.1 * abs(min(ylim)), 50, 'MarkerFaceColor', color, 'MarkerEdgeColor', 'none');
+        end
+    end
 
     % Manually adjust x-ticks and labels
     x_ticks_before = 0:100:signal_length;  % X-ticks for before stimulation
