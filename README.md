@@ -1,4 +1,4 @@
-# ICx-DBS-Tinnitus
+# ECIC-DBS-Tinnitus
 
 This repository contains MATLAB scripts and data analysis tools used in the study **"Modulation of Auditory Cortex Activity in Salicylate-Induced Tinnitus Rats via Deep Brain Stimulation of the Inferior Colliculus"**. It includes code for spike detection, firing rate analysis, and inter-spike interval (ISI) comparisons.
 
