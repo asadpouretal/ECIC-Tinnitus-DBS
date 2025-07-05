@@ -72,4 +72,4 @@ Zeinab Akbarnejad et al., Modulation of Auditory Cortex Activity in Salicylate-I
 ## Contact
 For questions or issues, please contact:
 - Abdoreza Asadpour: [a.asadpour@sussex.ac.uk](mailto:a.asadpour@sussex.ac.uk)
-- Alimohamad Asghari: [ashghari.am@iums.ac.ir](mailto:ashghari.am@iums.ac.ir)
+- Alimohamad Asghari: [asghari.am@iums.ac.ir](mailto:asghari.am@iums.ac.ir)
