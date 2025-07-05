@@ -28,7 +28,7 @@ This repository contains MATLAB scripts and data analysis tools used in the stud
 ### Steps to Run
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/asadpouretal/ICx-Tinnitus-DBS.git
+   git clone https://github.com/asadpouretal/ECIC-Tinnitus-DBS.git
    ```
 2. **Open MATLAB** and navigate to the repository directory.
 3. **Run the main script**:
