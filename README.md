@@ -66,7 +66,7 @@ The data provided in this repository is licensed under the **Creative Commons At
 ## Citation
 If you use this repository, please cite the associated manuscript:
 ```
-Zeinab Akbarnejad et al., Modulation of Auditory Cortex Activity in Salicylate-Induced Tinnitus Rats via Deep Brain Stimulation of the Inferior Colliculus. CNS Neuroscience & Therapeutics.
+Zeinab Akbarnejad et al., Modulation of Auditory Cortex Activity in Salicylate-Induced Tinnitus Rats via Deep Brain Stimulation of the Inferior Colliculus. Brain & Behavior.
 ```
 
 ## Contact
